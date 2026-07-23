@@ -1,0 +1,13 @@
+{
+  "name": "skill-builder",
+  "displayName": "Skill Builder",
+  "version": "1.0.0",
+  "description": "Builds production-ready Claude Code skills using a structured framework: requirements gathering, connector locking, quality gates/rubrics, and a self-improving knowledge base.",
+  "author": {
+    "name": "Adithya MS"
+  },
+  "repository": "https://github.com/adithya12345678/claude-skill-builder",
+  "license": "MIT",
+  "keywords": ["skill", "skill-builder", "meta", "framework", "generator"],
+  "skills": "./skills/"
+}

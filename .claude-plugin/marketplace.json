@@ -1,0 +1,13 @@
+{
+  "name": "adithya-skills",
+  "owner": {
+    "name": "Adithya MS"
+  },
+  "plugins": [
+    {
+      "name": "skill-builder",
+      "source": "./plugins/skill-builder",
+      "description": "Builds production-ready Claude Code skills using a structured framework: requirements gathering, connector locking, quality gates/rubrics, and a self-improving knowledge base."
+    }
+  ]
+}
