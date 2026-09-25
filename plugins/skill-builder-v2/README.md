@@ -15,12 +15,12 @@ This is a newer version of the original `skill-builder` plugin in this repo. Bot
 
 Hand it to Claude Code:
 
-> Install the skill-builder-v2 plugin from https://github.com/adithya12345678/claude-skill-builder
+> Install the skill-builder-v2 plugin from https://github.com/adithyams1/claude-skill-builder
 
 Or run it yourself:
 
 ```bash
-claude plugin marketplace add adithya12345678/claude-skill-builder
+claude plugin marketplace add adithyams1/claude-skill-builder
 claude plugin install skill-builder-v2@adithya-skills
 ```
 

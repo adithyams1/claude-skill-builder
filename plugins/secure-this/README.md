@@ -14,7 +14,7 @@ It assumes the model can be fully compromised by prompt injection and asks what 
 ## Install
 
 ```
-claude plugin marketplace add adithya12345678/claude-skill-builder
+claude plugin marketplace add adithyams1/claude-skill-builder
 claude plugin install secure-this@adithya-skills
 ```
 

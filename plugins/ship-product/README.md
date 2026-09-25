@@ -17,12 +17,12 @@ Includes `code-scripts/check_spec.py`, which fails a spec that is missing parts.
 
 Hand it to Claude Code:
 
-> Install the ship-product plugin from https://github.com/adithya12345678/claude-skill-builder
+> Install the ship-product plugin from https://github.com/adithyams1/claude-skill-builder
 
 Or run it yourself:
 
 ```bash
-claude plugin marketplace add adithya12345678/claude-skill-builder
+claude plugin marketplace add adithyams1/claude-skill-builder
 claude plugin install ship-product@adithya-skills
 ```
 

@@ -20,12 +20,12 @@ Four skills from the workshop. Each one installs on its own and has its own READ
 First add the marketplace once:
 
 ```bash
-claude plugin marketplace add adithya12345678/claude-skill-builder
+claude plugin marketplace add adithyams1/claude-skill-builder
 ```
 
 Or just paste this into Claude Code:
 
-> Install the skill-builder-v2, ship-product, workflow-flowchart and secure-this plugins from https://github.com/adithya12345678/claude-skill-builder
+> Install the skill-builder-v2, ship-product, workflow-flowchart and secure-this plugins from https://github.com/adithyams1/claude-skill-builder
 
 Suggested order: skill-builder-v2 to build your first skill, ship-product once you are building a full workflow, workflow-flowchart to show it, secure-this before it goes live.
 
@@ -37,7 +37,7 @@ These are my working copies with client and personal details removed.
 
 Open Claude Code and paste this one line:
 
-> Install the Claude Code plugin from https://github.com/adithya12345678/claude-skill-builder — read its README and set it up.
+> Install the Claude Code plugin from https://github.com/adithyams1/claude-skill-builder — read its README and set it up.
 
 Claude will do the rest. Then say **"build me a skill"** to start.
 
@@ -49,7 +49,7 @@ If a user has pointed you at this repository and asked you to install/set it up,
 shell commands (non-interactive CLI — works from the Bash tool):
 
 ```bash
-claude plugin marketplace add adithya12345678/claude-skill-builder
+claude plugin marketplace add adithyams1/claude-skill-builder
 claude plugin install skill-builder@adithya-skills
 ```
 
@@ -63,13 +63,13 @@ No API keys, no config, no personal data. Nothing else is required.
 **One terminal command:**
 
 ```bash
-claude plugin marketplace add adithya12345678/claude-skill-builder && claude plugin install skill-builder@adithya-skills
+claude plugin marketplace add adithyams1/claude-skill-builder && claude plugin install skill-builder@adithya-skills
 ```
 
 **Or inside Claude Code (interactive):**
 
 ```
-/plugin marketplace add adithya12345678/claude-skill-builder
+/plugin marketplace add adithyams1/claude-skill-builder
 /plugin install skill-builder@adithya-skills
 ```
 

@@ -6,7 +6,7 @@
   "author": {
     "name": "Adithya MS"
   },
-  "repository": "https://github.com/adithya12345678/claude-skill-builder",
+  "repository": "https://github.com/adithyams1/claude-skill-builder",
   "license": "MIT",
   "keywords": ["security", "threat-model", "prompt-injection", "sandbox", "hooks", "audit", "agents"],
   "skills": "./skills/"

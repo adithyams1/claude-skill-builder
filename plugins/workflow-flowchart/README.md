@@ -11,7 +11,7 @@ A Claude Code skill that turns a multi-step system you have just described in co
 ## Install
 
 ```
-claude plugin marketplace add adithya12345678/claude-skill-builder
+claude plugin marketplace add adithyams1/claude-skill-builder
 claude plugin install workflow-flowchart@adithya-skills
 ```
 
