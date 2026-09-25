@@ -41,9 +41,9 @@ Ask the user ALL of these at once. Never drip them one by one.
 **Before asking anything — scan existing skills:**
 Run `ls ~/.claude/skills/` and read the names. When proposing a skill name, make sure it:
 - Doesn't duplicate an existing skill name
-- Doesn't sound so similar it could cause confusion (e.g. don't create `lead-finder` if `media-ip-lead-finder` exists)
-- Is specific enough to be unambiguous — prefer `media-ip-mockup` over `mockup`, `shopogenie-lead-gen` over `lead-gen`
-- Uses lowercase-hyphen-case, verb-led or noun-led (e.g. `roundtable-queue-runner`, `brand-extractor`)
+- Doesn't sound so similar it could cause confusion (e.g. don't create `lead-finder` if `acme-lead-finder` exists)
+- Is specific enough to be unambiguous — prefer `acme-mockup` over `mockup`, `acme-lead-gen` over `lead-gen`
+- Uses lowercase-hyphen-case, verb-led or noun-led (e.g. `queue-runner`, `brand-extractor`)
 
 Propose the name to the user and confirm before building.
 
@@ -140,13 +140,13 @@ key, token, OAuth credential, DB id-with-auth, or any secret MUST read it at run
 store, never inline it in SKILL.md, a script, an .env, or a token file inside the skill folder. This way a
 leaked/shared skill exposes zero credentials — restore = reload the skill, keys come from the central store.
 
-- **API keys** live in `~/.claude/api_keys.json`, keyed by service. Load them, e.g.:
-  `KEY = __import__("json").load(open(__import__("os").path.expanduser("~/.claude/api_keys.json")))["<service>"]`
-  (bash: `python3 -c 'import json,os;print(json.load(open(os.path.expanduser("~/.claude/api_keys.json")))["<service>"])'`).
+- **API keys** live in `~/.claude/keys.json`, keyed by service. Load them, e.g.:
+  `KEY = __import__("json").load(open(__import__("os").path.expanduser("~/.claude/keys.json")))["<service>"]`
+  (bash: `python3 -c 'import json,os;print(json.load(open(os.path.expanduser("~/.claude/keys.json")))["<service>"])'`).
   If a service has a rotation pool, store a list (e.g. `youtube_data_api_pool`) and index/rotate over it.
-- **OAuth token files** (Gmail/Drive/etc.) live in `~/.claude/*.json` (e.g. `~/.claude/gmail_token.json`),
+- **OAuth token files** (Gmail/Drive/etc.) live in `~/.claude/*.json` (e.g. `~/.claude/google-login.json`),
   NOT inside the skill. Reference the central path; never cache a token into the skill's own folder.
-- When a skill needs a NEW key, add it to `~/.claude/api_keys.json` under a clear service name and reference
+- When a skill needs a NEW key, add it to `~/.claude/keys.json` under a clear service name and reference
   it — tell the user which name to populate. Never write the literal value into any skill file.
 - The `backup-skills` skill's redactor + fail-closed gate is the backstop, but the SOURCE must be clean:
   a hardcoded key is a bug even if the backup scrubs it.
@@ -512,7 +512,7 @@ Every skill must pass all of these before it's considered complete:
 - [ ] Failure modes defined (specific, not generic)
 - [ ] Solution Survey run on every fragile/expensive step — alternatives compared across layers, tradeoff shown to the user, rejected options logged in mcp-instructions.md
 - [ ] Connectors locked in (no improvisation when tools fail)
-- [ ] **No secrets hardcoded** — every key/token/OAuth read from `~/.claude/api_keys.json` (or `~/.claude/*token*.json`), never inline in the skill
+- [ ] **No secrets hardcoded** — every key/token/OAuth read from `~/.claude/keys.json` (or `~/.claude/*token*.json`), never inline in the skill
 - [ ] Assets folder populated or confirmed not needed
 - [ ] Reference files created or stubbed
 - [ ] Progressive Updates section included
@@ -534,7 +534,7 @@ Every skill must pass all of these before it's considered complete:
 3. Rubric dimensions must come from the success criteria — not invented
 4. Progressive Updates section is mandatory in every skill
 5. Connectors section must lock the method — never allow improvisation when a tool fails
-5b. **Never hardcode a secret in a skill** — all API keys/tokens/OAuth read at runtime from the central `~/.claude/api_keys.json` (or `~/.claude/*token*.json`), keyed by service, so a leaked skill exposes nothing (see the Secrets & Credentials block under Section 3)
+5b. **Never hardcode a secret in a skill** — all API keys/tokens/OAuth read at runtime from the central `~/.claude/keys.json` (or `~/.claude/*token*.json`), keyed by service, so a leaked skill exposes nothing (see the Secrets & Credentials block under Section 3)
 6. Failure modes must be specific ("never use X because Y") — not generic advice
 7. Show full SKILL.md for review and get approval before saving any files
 8. **Never invent examples** — good/bad examples only come from real test runs with the user; leave the Examples section empty until Step 5 produces them
