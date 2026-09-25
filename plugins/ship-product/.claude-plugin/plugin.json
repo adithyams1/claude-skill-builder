@@ -1,0 +1,19 @@
+{
+  "name": "ship-product",
+  "displayName": "Ship Product",
+  "version": "1.0.0",
+  "description": "Runs a whole workflow build: intake, spec, a 20-50 case benchmark before any code, build one step at a time, label, then ship, fix or stop.",
+  "author": {
+    "name": "Adithya MS"
+  },
+  "repository": "https://github.com/adithya12345678/claude-skill-builder",
+  "license": "MIT",
+  "keywords": [
+    "spec",
+    "evals",
+    "benchmark",
+    "workflow",
+    "workshop"
+  ],
+  "skills": "./skills/"
+}

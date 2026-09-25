@@ -1,0 +1,18 @@
+{
+  "name": "skill-builder-v2",
+  "displayName": "Skill Builder v2",
+  "version": "1.0.0",
+  "description": "The skill builder from the AI Automation Workshop: asks every question up front, writes the SKILL.md, references and knowledge base, and won't call a skill done until real outputs are approved.",
+  "author": {
+    "name": "Adithya MS"
+  },
+  "repository": "https://github.com/adithya12345678/claude-skill-builder",
+  "license": "MIT",
+  "keywords": [
+    "skill",
+    "skill-builder",
+    "workshop",
+    "framework"
+  ],
+  "skills": "./skills/"
+}

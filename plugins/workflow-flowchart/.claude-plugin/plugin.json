@@ -1,0 +1,13 @@
+{
+  "name": "workflow-flowchart",
+  "displayName": "Workflow Flowchart",
+  "version": "1.0.0",
+  "description": "Turns any multi-step system discussed in conversation into an interactive pan-zoom flowchart, colour-coded by who does each step (input, AI, human, tool, review gate, output), and files it into a browsable workflows directory.",
+  "author": {
+    "name": "Adithya MS"
+  },
+  "repository": "https://github.com/adithya12345678/claude-skill-builder",
+  "license": "MIT",
+  "keywords": ["flowchart", "workflow", "diagram", "visualization", "pipeline", "client-demo"],
+  "skills": "./skills/"
+}

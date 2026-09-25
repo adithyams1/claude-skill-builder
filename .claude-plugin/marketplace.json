@@ -8,6 +8,26 @@
       "name": "skill-builder",
       "source": "./plugins/skill-builder",
       "description": "Builds production-ready Claude Code skills using a structured framework: requirements gathering, connector locking, quality gates/rubrics, and a self-improving knowledge base."
+    },
+    {
+      "name": "skill-builder-v2",
+      "source": "./plugins/skill-builder-v2",
+      "description": "The skill builder from the AI Automation Workshop: asks every question up front, builds the skill, and won't call it done until real outputs are approved."
+    },
+    {
+      "name": "ship-product",
+      "source": "./plugins/ship-product",
+      "description": "The loop for building a whole workflow: intake, spec, a test set before any code, build, label, re-test, then ship, fix or stop."
+    },
+    {
+      "name": "workflow-flowchart",
+      "source": "./plugins/workflow-flowchart",
+      "description": "Turns any multi-step system into an interactive pan-zoom flowchart, colour-coded by who does each step. Built for showing a client how a workflow works."
+    },
+    {
+      "name": "secure-this",
+      "source": "./plugins/secure-this",
+      "description": "Security audit for any skill or workflow before it goes live: data flow map, prompt-injection checks, and the sandbox config and hooks that contain it."
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "name": "secure-this",
+  "displayName": "Secure This",
+  "version": "1.0.0",
+  "description": "Security audit and hardening for a Claude Code skill or agent workflow: maps it as a data flow diagram, runs a nine-layer threat sweep and the Rule of Two, grades it against hard gates, and stages sandbox config and hooks to contain it. Allowed to return UNKNOWN.",
+  "author": {
+    "name": "Adithya MS"
+  },
+  "repository": "https://github.com/adithya12345678/claude-skill-builder",
+  "license": "MIT",
+  "keywords": ["security", "threat-model", "prompt-injection", "sandbox", "hooks", "audit", "agents"],
+  "skills": "./skills/"
+}
